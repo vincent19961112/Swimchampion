@@ -1,0 +1,9 @@
+.mat-toolbar {
+    min-height: 200px;
+    width: 100%;
+}
+
+.mat-toolbar-row {
+    flex-direction: row;
+    justify-content: center;
+}

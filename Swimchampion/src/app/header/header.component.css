@@ -1,0 +1,19 @@
+.mat-toolbar {
+    height: 6rem;
+}
+
+.material-icons {
+    font-size: 3rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+a {
+    font-size: 1.5rem;
+}
+
+.space {
+    flex: 1 1 auto;
+}
