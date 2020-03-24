@@ -1,0 +1,69 @@
+mat-grid-list {
+    background: linear-gradient(45deg, #8500ff, #5acaff);
+    transition: 5s;
+}
+
+.material-icons {
+    padding-top: .5em;
+    font-size: 12em;
+    color: #1737f0;
+}
+
+#Login {
+    position: absolute;
+    text-align: center;
+    background: linear-gradient(45deg, #8500ff, #fff, #5acaff);
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.582);
+    line-height: normal;
+    border: 5px solid black;
+    min-width: 500px;
+    min-height: 70vh;
+}
+
+mat-form-field {
+    text-align: center;
+}
+
+.Login-form {
+    text-align: center;
+    line-height: 4em;
+    width: 100%;
+}
+
+.Login-full-width {
+    width: 100%;
+    line-height: 2.5em;
+    font-size: 1.2em;
+}
+
+mat-label {
+    font-size: 2em;
+}
+
+.PassForget {
+    color: #fff;
+    border-radius: 25px;
+    min-width: 300px;
+    background-color: #5acaff;
+}
+
+.PassLogin {
+    color: #fff;
+    border-radius: 25px;
+    min-width: 300px;
+    background-color: aqua;
+}
+
+.Gmail {
+    border-radius: 25px;
+    color: #fff;
+    min-width: 300px;
+    background-color: crimson
+}
+
+.Facebook {
+    border-radius: 25px;
+    color: #fff;
+    min-width: 300px;
+    background-color: darkblue;
+}

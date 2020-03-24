@@ -1,1 +1,39 @@
-<p>login works!</p>
+<mat-grid-list cols="1" rowHeight="100vh">
+    <mat-grid-tile colspan="1">
+        <div id="Login">
+            <span class="material-icons">account_circle</span>
+
+            <form class="Login-form">
+                <mat-form-field class="Login-full-width" value="Your Email">
+                    <mat-label>Your Email:</mat-label>
+                    <input matInput type="email" placeholder="EX.12345@smaple.com...">
+                </mat-form-field>
+                <mat-form-field class="Login-full-width" value="password">
+                    <mat-label>password:</mat-label>
+                    <input matInput type="password" placeholder="********">
+                </mat-form-field>
+                <div>
+                    <mat-checkbox>記住密碼</mat-checkbox>
+                </div>
+
+                <a mat-raised-button class="PassLogin">登入</a>
+
+
+                <div>
+                    <a mat-raised-button class="Gmail">gmail登入</a>
+                </div>
+                <div>
+                    <a mat-raised-button class="Facebook">facebook登入</a></div>
+                <div>
+                    <a mat-raised-button class="PassForget">
+                        忘記密碼?</a>
+                </div>
+
+
+            </form>
+
+        </div>
+    </mat-grid-tile>
+</mat-grid-list>
+
+<router-outlet></router-outlet>
