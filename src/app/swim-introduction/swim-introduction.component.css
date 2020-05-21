@@ -1,19 +1,103 @@
 mat-grid-list {
-    /* background: linear-gradient(45deg, #8500ff, #5acaff, #fff, #5acaff, #8500ff); */
+    background: linear-gradient(45deg, #8500ff, #5acaff, #fff, #5acaff, #8500ff);
 }
 
 #Crawl-Stroke {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: rgb(214, 31, 31);
+    opacity: 1;
+}
+
+#Crawl-Stroke:hover {
+    opacity: 0.8;
+    animation: 8s linear 0s infinite alternate Crawl-Stroke;
     background-image: url('../../assets/img//Crawl-Stroke.jpg');
 }
 
+@keyframes Crawl-Stroke {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
 #Frog {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: rgb(55, 170, 32);
+    opacity: 1;
+}
+
+#Frog:hover {
+    opacity: 0.8;
+    animation: 8s linear 0s infinite alternate Frog;
     background-image: url('../../assets/img//Frog.jpg');
 }
 
+@keyframes Frog {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
 #Butterfly {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: rgb(141, 16, 16);
+    opacity: 1;
+}
+
+#Butterfly:hover {
+    opacity: 0.8;
+    animation: 8s linear 0s infinite alternate Butterfly;
     background-image: url('../../assets/img//Butterfly.jpg');
 }
 
+@keyframes Butterfly {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
 #Supine {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: rgb(89, 22, 197);
+    opacity: 1;
+}
+
+#Supine:hover {
+    opacity: 0.8;
+    animation: 8s linear 0s infinite alternate Supine;
     background-image: url('../../assets/img//Supine.jpg');
+}
+
+@keyframes Supine {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
 }

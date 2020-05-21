@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 50px;
+    background: linear-gradient(45deg, #8500ff, #5acaff, #fff, #5acaff, #8500ff);
+    z-index: 1;
+}
+
+.box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 350px;
+    background: #060c21;
+    border: 1px solid #000;
+}
+
+.container .box:before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    transform: skew(2deg, 2deg);
+    z-index: -1;
+}
+
+.container .box:nth-child(1):before {
+    background: linear-gradient(315deg, #89ff00, #00bcd4);
+}
+
+.container .box:nth-child(2):before {
+    background: linear-gradient(315deg, #ff0057, #e64a19);
+}
+
+.container .box:nth-child(3):before {
+    background: linear-gradient(315deg, #e91e63, #5d02ff);
+}
+
+.container .box:nth-child(4):before {
+    background: linear-gradient(315deg, #ff0000, #ffc107);
+}
+
+.container .box:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+}
+
+.content {
+    position: relative;
+    height: 300px;
+    width: 300px;
+}
+
+.content h3 {
+    position: absolute;
+    top: 170px;
+    right: -15px;
+    font-size: 110px;
+    margin-bottom: 150px;
+    color: rgba(255, 255, 255, 0);
+    transition: 0.5s;
+}
+
+.box:hover h3 {
+    top: 0;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.content h2 {
+    position: absolute;
+    top: 20px;
+    font-size: 35px;
+    color: #fff;
+}
+
+.content p {
+    position: absolute;
+    top: 80px;
+    left: 10px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.box .content a {
+    position: relative;
+    left: 0;
+    margin: 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    display: inline-block;
+    color: #fff;
+    transition: 0.5s;
+    transform: translateY(-40px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.box:hover .content a {
+    transform: translateY(250px);
+    opacity: 1;
+    visibility: visible;
+}
+
+.box .content a:hover {
+    color: black;
+    background: #fff;
+}
